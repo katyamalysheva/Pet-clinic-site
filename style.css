@@ -1,0 +1,394 @@
+body{
+  background: url("img/фон1.jpg") no-repeat;
+  background-size: 100% auto;
+
+
+
+}
+.logo{
+  margin: 0px;
+  padding: 0px 0 0 0px;
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  z-index: 100;
+  max-width: 15%;
+  max-width: 15%;
+
+}
+.main_center{
+
+  font-size: 40px;
+  position:absolute;
+  left:100%;
+  top:40%;
+  text-decoration:none;
+  color: black;
+  font-weight: bold;
+  z-index:100;
+
+
+
+}
+.end{
+
+  top:99%;
+  left:20%;
+  z-index: 100;
+}
+.nav_menu{
+  padding: 0 0;
+  width: 720px;
+  height: 100px;
+  margin:0 auto;
+  position: absolute;
+  top:0px;
+  right:150px;
+  z-index: 100;
+
+
+
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 720px;
+  max-width: 800px;
+
+}
+
+.menu>li {
+  display: inline-block;
+  margin-right: -4px;
+  position:relative;
+  width: 180px;
+  max-width: 180px;
+
+
+}
+
+
+.menu a {
+  display: block;
+  margin-left: -1px;
+  padding: 60px 10px 10px 10px;
+  background: rgba(255, 255,255,0.2);
+  color:black;
+  border-left:0px solid black;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-left:
+}
+.menu a:hover {
+  background: red;
+  opacity: 0.8;
+  color: white;
+  border-left:2px solid black;
+}
+
+.menu .submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color:white;
+  position:absolute;
+  visibility: hidden;
+  width:180px;
+
+}
+.submenu a {
+  display: block;
+  margin-left: -1px;
+  padding: 10px;
+  color: black;
+  %border: 1px solid black;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+.nav_meny ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu > li:hover .submenu {
+  visibility: visible;
+}
+.menu .active {
+
+
+  border-left:2px solid black;
+  background: rgba(255, 0,0,0.8)
+}
+.colums_container{
+  z-index: 30;
+  top:66%;
+  left:10%;
+  right:10%;
+  position: absolute;
+}
+.firstrow{
+
+}
+.secondrow{
+
+}
+.firstelem, .secondelem, .thirdelem{
+  width: 29%;
+  display:inline-block;
+  margin: 2%;
+  vertical-align: top;
+}
+h1{
+  font-size: 20px;
+
+
+}
+.colums_container a{
+  text-decoration: none;
+  color: black;
+
+}
+.colums_container h1{
+  font-size: 23px;
+}
+.colums_container p{
+  font-size: 16px;
+}
+
+.infaept{
+  position: absolute;
+  top:50%;
+  left: 10%;
+  width:50%;
+  font-size: 18px;
+}
+.end{
+  position: relative;
+  width:20%;
+  bottom:40%;
+
+}
+.footercontainer{
+  position:absolute;
+  top: 215%;
+  background-color: #C0C0C0;
+  width: 100%;
+  margin-top: 1%;
+  margin-left:-10px ;
+  margin-right:10px ;
+
+}
+.footerinfo{
+  margin-left: 10%;
+  background-color: inherit;
+  margin-right:10%;
+
+}
+.footerelem{
+    position: relative;
+    display:inline-block;
+    width: 22%;
+    vertical-align: top;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+.
+}
+.footerelem h1{
+    text-align: left;
+    border-bottom: 2px solid red;
+    font-size: 25px;
+}
+.lastf{
+  background-color: white;
+  width:99%;
+  height:5%;
+  z-index:99;
+  position:absolute;
+  top:250%;
+
+
+}
+.footerelem p{
+    text-align: left;
+}
+.click{
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 100;
+}
+.spisok ol {
+  /* убираем стандартную нумерацию */
+  list-style: none;
+  /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+  counter-reset: li;
+  }
+  .spisok li:before {
+  /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+  counter-increment: li;
+  /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+  content: counters(li,".") ". ";
+}
+.right_menu {
+  font-size: 22px;
+  font-style: italic;
+  position: absolute;
+  text-decoration: none;
+  top:65%;
+  right:15%;
+
+  border-left: 1px dotted grey;
+}
+.right_menu li {
+  list-style: none;
+  margin-top: 15px;
+  }
+  .right_menu a{
+  text-decoration: none;
+  font-weight:600;
+
+  color:#961818
+}
+  .right_menu a:hover{
+  color :grey
+}
+.directions{
+  %border-top: 2px dotted red;
+  border-bottom: 2px dotted red;
+  position: absolute;
+  top:50%;
+  width:80%;
+  left:10%;
+  right:10%;
+  vertical-align: top;
+  background-image:  url("img/фон123.jpg") ;
+  background-size: 50%;
+  background-position:left;
+  background-repeat: repeat-x,[ repeat-y];
+
+
+}
+.directions img{
+  width:100%;
+}
+.directions td{
+  width: 20%;
+
+}
+.directions h2{
+  font-size: 30px;
+  color:black;
+  margin-top: 15px;
+
+  }
+.directions td{
+  text-align: left;
+  vertical-align: top;
+
+}
+.inform{
+  position: absolute;
+  width:78%;
+  left:11%;
+  right:10%;
+  top:156%;
+  font-size:18px;
+  border-top: 2px dotted red;
+  border-bottom: 2px dotted red;
+}
+.price{
+  top:50%;
+  position: absolute;
+  text-align: left;
+  width:50%;
+  left:10%;
+
+}
+.price h4{
+  font-size: 30px;
+}
+.price a{
+  text-decoration: none;
+  color:black;
+}
+.text_link{
+  font-size: 18px;
+}
+.calc{
+  padding:30px;
+  border: 10px dotted red;
+  top:160%;
+  position:absolute;
+  left:65%;
+
+}
+
+.rules{
+  position: absolute;
+  top:50%;
+  left:10%;
+  right:40%;
+  font-size: 18px;
+}
+.photo{
+  position: absolute;
+  padding: 10px;
+  top:150%;
+  right:20%;
+  border: 3px dotted red;
+}
+}
+.photo{
+  position: absolute;
+  padding: 10px;
+  top:150%;
+  right:20%;
+  border: 3px dotted red;
+}
+.bck{
+  background-image:  url("img/Снимок.png") ;
+  background-size: 100% auto;
+  background-position: right;
+  background-repeat: repeat-y, repeat-y;
+  width:100%;
+  height:100%;
+  margin-top: -10px;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.bck img{
+  position: relative;
+  left:15%;
+}
+.comma{
+  position: absolute;
+  top:55%;
+  width:50%;
+  left:10%;
+  font-size: 18px;
+
+}
+.contact{
+  position: absolute;
+  top:55%;
+  width:50%;
+  left:10%;
+  font-size: 18px;
+  line-height:  30px;
+}
+.contact h1{
+  font-size: 30px;
+}
+.contact a{
+  text-decoration: none;
+  color:#961818;
+
+}
